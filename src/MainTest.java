@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
     @Test
@@ -46,13 +45,13 @@ class MainTest {
     }
     @Test
     void zaszyfrujJezeliDlugoscTekstuMniejszaOdPotegiLiczbyCalkowitej(){
-        String oczekiwana = "pgmrr oa";
+        String oczekiwana = "pgmrroa";
         String aktulna = Main.zaszyfruj("program");
         Assertions.assertEquals(oczekiwana,aktulna);
     }
     @Test
     void zaszyfrujJezeliDlugoscPustyWiersz(){
-        String oczekiwana = "prk rai om gi";
+        String oczekiwana = "prkraiomgi";
         String aktualna = Main.zaszyfruj("programiki");
         Assertions.assertEquals(oczekiwana,aktualna);
     }

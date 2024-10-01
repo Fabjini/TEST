@@ -9,7 +9,7 @@ public class Main {
             return false;
         }
         int pierwiastek = (int)(Math.sqrt(liczba));
-        for (int i = 2; i < pierwiastek; i++) {
+        for (int i = 2; i <= pierwiastek; i++) {
             if (liczba % i == 0)
                 return false;
         }
